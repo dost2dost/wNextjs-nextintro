@@ -3,6 +3,7 @@ import Prices from '../components/prices';
 import Fetch from 'isomorphic-unfetch';
 
 
+
 const index=(props) =>(
     <Layout>
 <div>

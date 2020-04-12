@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -322,175 +322,6 @@ const Navebar = () => __jsx("nav", {
 }, "Log Out")))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Navebar);
-
-/***/ }),
-
-/***/ "./components/prices.js":
-/*!******************************!*\
-  !*** ./components/prices.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\VSWorkspace\\NextJsProjects\\NextIntro\\components\\prices.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-class Prices extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currency: 'USD'
-    };
-  }
-
-  render() {
-    let list = '';
-
-    if (this.state.currency === 'USD') {
-      list = __jsx("li", {
-        className: "list-group-item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 14,
-          columnNumber: 18
-        }
-      }, "Bit Coin Rate for ", this.props.bpi.bpi.USD.description, ":", __jsx("span", {
-        className: "badge badge-primery",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15,
-          columnNumber: 68
-        }
-      }, this.props.bpi.bpi.USD.code), __jsx("strong", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16,
-          columnNumber: 13
-        }
-      }, this.props.bpi.bpi.USD.rate));
-    } else if (this.state.currency === 'GBP') {
-      list = __jsx("li", {
-        className: "list-group-item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20,
-          columnNumber: 14
-        }
-      }, "Bit Coin Rate for ", this.props.bpi.bpi.GBP.description, ":", __jsx("span", {
-        className: "badge badge-primery",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21,
-          columnNumber: 64
-        }
-      }, this.props.bpi.bpi.GBP.code), __jsx("strong", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22,
-          columnNumber: 9
-        }
-      }, this.props.bpi.bpi.GBP.rate));
-    } else if (this.state.currency === 'EUR') {
-      list = __jsx("li", {
-        className: "list-group-item",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 15
-        }
-      }, "Bit Coin Rate for ", this.props.bpi.bpi.EUR.description, ":", __jsx("span", {
-        className: "badge badge-primery",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 65
-        }
-      }, this.props.bpi.bpi.EUR.code), __jsx("strong", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28,
-          columnNumber: 10
-        }
-      }, this.props.bpi.bpi.EUR.rate));
-    }
-
-    return __jsx("div", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 9
-      }
-    }, __jsx("ul", {
-      className: "list-group",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 13
-      }
-    }, list), __jsx("br", {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 13
-      }
-    }), __jsx("select", {
-      onChange: e => this.setState({
-        currency: e.target.value
-      }),
-      className: "form-control",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 13
-      }
-    }, __jsx("option", {
-      value: "USD",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38,
-        columnNumber: 17
-      }
-    }, "USD"), __jsx("option", {
-      value: "EUR",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39,
-        columnNumber: 17
-      }
-    }, "EUR"), __jsx("option", {
-      value: "GBP",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40,
-        columnNumber: 17
-      }
-    }, "GBP")));
-  }
-
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (Prices);
 
 /***/ }),
 
@@ -2169,98 +2000,73 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/logout.js":
+/*!*************************!*\
+  !*** ./pages/logout.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _components_prices__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/prices */ "./components/prices.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "D:\\VSWorkspace\\NextJsProjects\\NextIntro\\pages\\index.js";
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "D:\\VSWorkspace\\NextJsProjects\\NextIntro\\pages\\logout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
 
-const index = props => __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8,
-    columnNumber: 5
+class logout extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
+  constructor(...args) {
+    super(...args);
+
+    _defineProperty(this, "state", {});
   }
-}, __jsx("div", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9,
-    columnNumber: 1
-  }
-}, __jsx("h1", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10,
-    columnNumber: 1
-  }
-}, "Well come to next react "), __jsx("span", {
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11,
-    columnNumber: 1
-  }
-}, "Current Bit Coins Rate "), __jsx(_components_prices__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  bpi: props.bpi,
-  __self: undefined,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 1
-  }
-})));
 
-index.getInitialProps = async function () {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-  const data = await res.json();
-  return {
-    bpi: data
-  };
-};
+  render() {
+    return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 9
+      }
+    }, __jsx("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 13
+      }
+    }, __jsx("h1", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 18
+      }
+    }, "Log out page ")));
+  }
 
-/* harmony default export */ __webpack_exports__["default"] = (index);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (logout);
 
 /***/ }),
 
-/***/ 5:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 6:
+/*!*******************************!*\
+  !*** multi ./pages/logout.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\VSWorkspace\NextJsProjects\NextIntro\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! D:\VSWorkspace\NextJsProjects\NextIntro\pages\logout.js */"./pages/logout.js");
 
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -2331,4 +2137,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=logout.js.map
